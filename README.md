@@ -1,4 +1,3 @@
-# Medical chatbot using RAG based GenAI opensource models
 ---
 title: Medical Chatbot
 emoji: 🩺
