@@ -18,7 +18,7 @@ OPENAI_API_KEY=os.environ.get('OPENAI_API_KEY')
 
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-os.environ["TRANSFORMERS_CACHE"] = "/app/.cache"
+# os.environ["TRANSFORMERS_CACHE"] = "/app/.cache"
 
 embeddings = download_hugging_face_embeddings()
 
