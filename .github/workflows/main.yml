@@ -18,6 +18,7 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
         run: git push --force https://kaushalp-0612:$HF_TOKEN@huggingface.co/spaces/kaushalp-0612/Medical-chatbot main
 
             
