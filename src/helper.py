@@ -13,7 +13,6 @@ def load_pdf_file(data):
                             loader_cls=PyPDFLoader)
 
     documents=loader.load()
-
     return documents
 
 
