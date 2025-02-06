@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from src.prompt import *
 import os
-import pinecone
+from pinecone.grpc import PineconeGRPC as Pinecone
 
 
 
