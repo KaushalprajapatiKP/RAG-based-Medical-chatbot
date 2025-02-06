@@ -8,6 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from src.prompt import *
 import os
+import pinecone
 
 
 
@@ -23,7 +24,7 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 # os.environ["TRANSFORMERS_CACHE"] = "/app/.cache"
 
 embeddings = download_hugging_face_embeddings()
-# pinecone.init(api_key=PINECONE_API_KEY, environment="us-west1-gcp")
+pinecone.init(api_key=PINECONE_API_KEY, environment="us-west1-gcp")
 
 index_name = "medicalbot"
 
